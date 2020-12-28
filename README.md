@@ -1,5 +1,8 @@
 # crud-vue-3
 
+## Note
+This repository is a repository of a simple frontend crud project with a vue 3 composition api. The backend repository is https://github.com/fuatakbar/backend-laravue-crud-simple
+
 ## Project setup
 ```
 npm install
