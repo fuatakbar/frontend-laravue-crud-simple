@@ -70,7 +70,7 @@ export default {
     onMounted(() => {
       // get API from laravel backend
       axios
-        .get(`http://localhost:8000/api/post/${route.params.id}`)
+        .get(`https://simplelaravuecrud.herokuapp.com/api/post/${route.params.id}`)
         .then((response) => {
           // assign state post with response data
           post.title = response.data.data.title;
@@ -87,7 +87,7 @@ export default {
       let content = post.content;
 
       axios
-        .put(`http://localhost:8000/api/post/${route.params.id}`, {
+        .put(`https://simplelaravuecrud.herokuapp.com/api/post/${route.params.id}`, {
           title: title,
           content: content,
         })

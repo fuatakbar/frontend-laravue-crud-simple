@@ -58,7 +58,7 @@ export default {
     onMounted(() => {
       // get API from laravel back end
       axios
-        .get("http://localhost:8000/api/post")
+        .get("https://simplelaravuecrud.herokuapp.com/api/post")
 
         .then((response) => {
           // asign state posts with response data
@@ -72,7 +72,7 @@ export default {
     // delete function
     function postDelete(id) {
       axios
-        .delete(`http://localhost:8000/api/post/${id}`)
+        .delete(`https://simplelaravuecrud.herokuapp.com/api/post/${id}`)
         .then(() => {
           // splice post
           posts.value.splice(posts.value.indexOf(id), 1);

@@ -69,7 +69,7 @@ export default {
       let content = post.content;
 
       axios
-        .post("http://localhost:8000/api/post", {
+        .post("https://simplelaravuecrud.herokuapp.com/api/post", {
           title: title,
           content: content,
         })
